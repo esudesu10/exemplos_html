@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title >Formulário de Contato</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: left;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    header {
+    background-color: #f2e3e3;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+}
+nav ul {
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    justify-content: center;
+    color: #ffffff;
+}
+
+nav .logo {
+    display: inline-block;
+    margin-right: 100px;
+    position: fixed;
+    top: 1;
+    left: 0;
+    width: 5%;
+}
+
+nav .logo img {
+	width: 48px;
+	height: 32px;
+}
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    
+    .title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">
+    Fale Conosco
+  </div>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="https://static.vecteezy.com/system/resources/previews/010/884/730/original/owl-head-mascot-team-logo-png.png" alt="Logo">
+      </div>
+      <ul>
+        <li><a href="index.html">Inicial</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+<h1>Fale Conosco</h1>
+  <form action="processar_formulario.php" method="POST">
+    <table>
+      <tr>
+        <td colspan="2">
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+        </td>
+        <td>
+          <div class="form-group">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" required>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+          </div>
+        </td>
+        <td>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>

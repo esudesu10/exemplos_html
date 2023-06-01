@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: left;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    header {
+    background-color: #f2e3e3;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+}
+nav ul {
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    justify-content: center;
+    color: #ffffff;
+}
+
+nav .logo {
+    display: inline-block;
+    margin-right: 100px;
+    position: fixed;
+    top: 1;
+    left: 0;
+    width: 5%;
+}
+
+nav .logo img {
+	width: 48px;
+	height: 32px;
+}
+h1 {
+      color: #333;
+      text-align: left;
+      padding: 30px;
+    }
+
+    #blog-container {
+      height: 500px; /* Altura fixa do contêiner principal */
+      overflow-y: scroll; /* Adiciona a barra de rolagem vertical */
+    }
+    label {
+      font-weight: bold;
+    }
+
+    .post {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+    }
+
+    .post h2 {
+      color: #333;
+      margin-top: 0;
+    }
+
+    .post img {
+      width: 500px;
+      height: 500px;
+    }
+
+    .post p {
+      line-height: 1.5;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Blog</h1>
+  <form action="processar_formulario.php" method="POST">
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="https://static.vecteezy.com/system/resources/previews/010/884/730/original/owl-head-mascot-team-logo-png.png" alt="Logo">
+      </div>
+      <ul>
+        <li><a href="index.html">Inicial</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="blog-container">
+    <div class="post">
+      <h2>Meu Carro novo</h2>
+      <img src="assets/carro 12.jpeg" alt="Imagem 1">
+      <p>Comprei esse carro novo.</p>
+    </div>
+
+    <div class="post">
+      <h2>Meu Carro novo</h2>
+      <img src="assets/carro 11.jpeg" alt="Imagem 1">
+      <p>Comprei esse carro novo.</p>
+    </div>
+    <div class="post">
+      <h2>Meu Carro novo</h2>
+      <img src="assets/carro 10.jpeg" alt="Imagem 1">
+      <p>Comprei esse carro novo.</p>
+    </div>
+    <div class="post">
+      <h2>Meu Carro novo</h2>
+      <img src="assets/carro1.jpeg" alt="Imagem 1">
+      <p>Comprei esse carro novo.</p>
+    </div>
+    <div class="post">
+      <h2>Meu Carro novo</h2>
+      <img src="assets/carro2.jpeg" alt="Imagem 1">
+      <p>Comprei esse carro novo.</p>
+    </div>
+  </div>
+
+</body>
+</html>
