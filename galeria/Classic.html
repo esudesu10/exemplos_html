@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Classic Gallery</title>
+    <style>
+      /* Estilos para a galeria */
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .gallery-item {
+        margin: 10px;
+        text-align: center;
+      }
+
+      .gallery-item img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        /* border-radius: 50%; */
+        border: 2px solid #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .gallery-item img:hover {
+        transform: scale(1.1);
+      }
+
+      .gallery-item h3 {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .gallery-item p {
+        margin-top: 5px;
+        font-size: 16px;
+        color: #666;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/10/300/300" alt="couple 1" />
+        <h3>Couple 1</h3>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/20/300/300" alt="couple 2" />
+        <h3>Couple 2</h3>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/30/300/300" alt="couple 3" />
+        <h3>Couple 3</h3>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/40/300/300" alt="couple 4" />
+        <h3>Couple 4</h3>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/50/300/300" alt="couple 5" />
+        <h3>Couple 5</h3>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/60/300/300" alt="couple 6" />
+        <h3>Couple 6</h3>
+      </div>
+    </div>
+  </body>
+</html>

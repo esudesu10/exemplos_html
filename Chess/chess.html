@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  height: 800px;
+  border-style: solid;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  height: 50px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+}
+
+.white {
+  background-color: #eeeed2;
+}
+
+.black {
+  background-color: #759656;
+}
+
+/* estilos para as peças */
+.identify{
+  position: relative;
+}
+.number{
+  position: absolute;
+  bottom: 65px;
+}
+.letter{
+  position: relative;
+  left: 85px;
+  top: 68px;
+}
+.piece {
+  display: block;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.piece1{
+  position: relative;
+  display: block;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  bottom: 35px;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="board">
+            <div class="row">
+              <div class="square white identify">
+                <p class="number">8</p>
+                <img src="chessAssets/whiteTower.png" alt="" class="piece">
+
+              </div>
+              <div class="square black">
+                <img src="chessAssets/whiteHorse.png" alt="" class="piece">
+
+              </div>
+              <div class="square white">
+                <img src="chessAssets/whiteBishop.png" alt="" class="piece">
+              </div>
+              <div class="square black">
+                <img src="chessAssets/whiteQueen.png" alt="" class="piece">
+              </div>
+              <div class="square white">
+                <img src="chessAssets/whiteKing.png" alt="" class="piece">
+
+              </div>
+              <div class="square black">
+                <img src="chessAssets/whiteBishop.png" alt="" class="piece">
+              </div>
+              <div class="square white">
+                <img src="chessAssets/whiteHorse.png" alt="" class="piece">
+              </div>
+              <div class="square black">
+                <img src="chessAssets/whiteTower.png" alt="" class="piece">
+              </div>
+            </div>
+            <div class="row">
+              <div class="square black identify">
+                <p class="number">7</p>
+                <img src="chessAssets/whitePawn.png" alt="" class="piece">
+              </div>
+              <div class="square white">
+                <img src="chessAssets/whitePawn.png" alt="" class="piece">
+              </div>
+              <div class="square black">                
+                <img src="chessAssets/whitePawn.png" alt="" class="piece">
+              </div>
+              <div class="square white">                
+                <img src="chessAssets/whitePawn.png" alt="" class="piece">
+              </div>
+              <div class="square black">                
+                <img src="chessAssets/whitePawn.png" alt="" class="piece">
+              </div>
+              <div class="square white">                
+                <img src="chessAssets/whitePawn.png" alt="" class="piece">
+              </div>
+              <div class="square black">                
+                <img src="chessAssets/whitePawn.png" alt="" class="piece">
+              </div>
+              <div class="square white">                
+                <img src="chessAssets/whitePawn.png" alt="" class="piece">
+              </div>
+            </div>
+            <div class="row">
+              <div class="square white identify">
+                <p class="number">6</p>
+              </div>
+              <div class="square black"></div>
+              <div class="square white"></div>
+              <div class="square black"></div>
+              <div class="square white"></div>
+              <div class="square black"></div>
+              <div class="square white"></div>
+              <div class="square black"></div>
+            </div>
+            <div class="row">
+              <div class="square black identify">
+                <p class="number">5</p>
+              </div>
+              <div class="square white"></div>
+              <div class="square black"></div>
+              <div class="square white"></div>
+              <div class="square black"></div>
+              <div class="square white"></div>
+              <div class="square black"></div>
+              <div class="square white"></div>
+            </div>
+            <div class="row">
+              <div class="square white identify">
+                <p class="number">4</p>
+              </div>
+              <div class="square black"></div>
+              <div class="square white"></div>
+              <div class="square black"></div>
+              <div class="square white"></div>
+              <div class="square black"></div>
+              <div class="square white"></div>
+              <div class="square black"></div>
+            </div>
+            <div class="row">
+              <div class="square black identify">
+                <p class="number">3</p>
+              </div>
+              <div class="square white"></div>
+              <div class="square black"></div>
+              <div class="square white"></div>
+              <div class="square black"></div>
+              <div class="square white"></div>
+              <div class="square black"></div>
+              <div class="square white"></div>
+            </div>
+            <div class="row">
+              <div class="square white identify">
+                <img src="chessAssets/blackPawn.png" alt="" class="piece">
+                <p class="number">2</p>
+              </div>
+              <div class="square black">
+                <img src="chessAssets/blackPawn.png" alt="" class="piece">
+              </div>
+              <div class="square white">
+                <img src="chessAssets/blackPawn.png" alt="" class="piece">
+              </div>
+              <div class="square black">
+                <img src="chessAssets/blackPawn.png" alt="" class="piece">
+              </div>
+              <div class="square white">
+                <img src="chessAssets/blackPawn.png" alt="" class="piece">
+              </div>
+              <div class="square black">
+                <img src="chessAssets/blackPawn.png" alt="" class="piece">
+              </div>
+              <div class="square white">
+                <img src="chessAssets/blackPawn.png" alt="" class="piece">
+              </div>
+              <div class="square black">
+                <img src="chessAssets/blackPawn.png" alt="" class="piece">
+              </div>
+            </div>
+            <div class="row">
+              <div class="square black identify">
+                <p class="number">1</p>
+                <p class="letter">A</p>
+                <img src="chessAssets/blackTower.png" alt="" class="piece1">
+              </div>
+              <div class="square white identify">
+                <p class="letter">B</p>
+                <img src="chessAssets/blackHorse.png" alt="" class="piece1">
+              </div>
+              <div class="square black identify">
+                <p class="letter">C</p>
+                <img src="chessAssets/blackBishop.png" alt="" class="piece1">
+
+              </div>
+              <div class="square white identify">
+                <p class="letter">D</p>
+                <img src="chessAssets/blackQueen.png" alt="" class="piece1">
+
+              </div>
+              <div class="square black identify">
+                <p class="letter">E</p>
+                <img src="chessAssets/blackKing.png" alt="" class="piece1">
+
+              </div>
+              <div class="square white identify">
+                <p class="letter">F</p>
+                <img src="chessAssets/blackBishop.png" alt="" class="piece1">
+
+              </div>
+              <div class="square black identify">
+                <p class="letter">G</p>
+                <img src="chessAssets/blackHorse.png" alt="" class="piece1">
+              </div>
+              <div class="square white identify">
+                <p class="letter">H</p>
+                <img src="chessAssets/blackTower.png" alt="" class="piece1">
+              </div>
+            </div>
+          </div>          
+    </body>
+</html>
